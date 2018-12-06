@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>Thêm mới phiếu thu</title>
+
+    <!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <link href="vendors/iCheck/skins/flat/blue.css" rel="stylesheet">
+
+    <!-- bootstrap-progressbar -->
+    <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="build/css/custom.css" rel="stylesheet">
+    <link href="build/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="topbar">
+        <ul class="menu-topbar">
+          <li><a href="#" title="Home" class="active">Home</a></li>
+          <li><a href="#" title="Hệ thống">Hệ thống</a></li>
+          <li><a href="#" title="Trợ giúp ">Trợ giúp</a></li>
+        </ul>
+      </div>
+      <!--End topbar-->
+      <div class="box-user">
+        <div class="text">
+          <p><span>Tài khoản: </span>Lê Thị Thủy</p>
+          <p><span>Chức vụ: Quản lý</span></p>
+          <a href="#" title="Đăng xuất">Đăng xuất</a>
+        </div>
+        <div class="avatar">
+          <a href="#" title="user"><img src="images/avatar.png" alt="user"></a>
+        </div>
+      </div>
+      <!--End box-user-->
+      <div class="head-content">
+        <ul class="main-menu">
+          <li class="home"><a href="#" title="home"><img src="images/icon-house.png" alt="home"></a></li>
+          <li><a href="#" title="" class="active"><img src="images/icon-tienmat.png" alt="images"><span>Tiền mặt</span></a></li>
+          <li><a href="#" title=""><img src="images/icon-tiengui.png" alt="images"><span>Tiền gửi</span></a></li>
+          <li><a href="#" title=""><img src="images/icon-muahang.png" alt="images"><span>Mua hàng</span></a></li>
+          <li><a href="#" title=""><img src="images/icon-banhang.png" alt="images"><span>Bán hàng</span></a></li>
+          <li><a href="#" title=""><img src="images/icon-giathanh.png" alt="images"><span>Giá thành</span></a></li>
+          <li><a href="#" title=""><img src="images/icon-tonghop.png" alt="images"><span>Tổng hợp</span></a></li>
+          <li><a href="#" title=""><img src="images/icon-tscd.png" alt="images"><span>Tài sản cố định</span></a></li>
+          <li><a href="#" title=""><img src="images/icon-baocao.png" alt="images"><span>Báo cáo</span></a></li>
+        </ul>
+      </div>
+      <!--End header-content-->
+    </header>
+    <div class="main-body">
+      <div class="menu-top bg-blue-dark">
+        <ul class="menu-nav">
+          <li><a href="#" title="Menu">Menu</a></li>
+          <li><a href="#" title="Phiếu thu tiền">Phiếu thu tiền</a></li>
+          <li><a href="#" title="Phiếu chi tiền">Phiếu chi tiền</a></li>
+        </ul>
+        <div class="action-box">
+          <a href="#" title="Copy"><span class="icon"><img src="images/icon-copy.png" alt="copy"></span> Copy</a>
+          <a href="#" title="Thêm"><span class="icon"><img src="images/icon-add.png" alt="copy"></span> Thêm</a>
+          <a href="#" title="Sửa"><span class="icon"><img src="images/icon-edit.png" alt="copy"></span> Sửa</a>
+          <a href="#" title="Xóa"><span class="icon"><img src="images/icon-delete.png" alt="copy"></span> Xóa</a>
+        </div>
+      </div>
+      <!--End menu-top-->
+      <div class="head-filter">
+        <form action="#">
+          <div class="row ">
+            <div class="col-xs-12 space-10">
+              <div class="box-inline">
+                <span class="text-label">Từ ngày</span>
+                <div class="inline-block">
+                  <input type="text" class="form-control has-feedback-right date-single" placeholder="First Name">
+                  <span class="fa fa-calendar-o form-control-feedback right" aria-hidden="true"></span>
+                </div>
+              </div>
+              <!--End box-inline-->
+              <div class="box-inline">
+                <span class="text-label">Đến ngày</span>
+                <div class="inline-block">
+                  <input type="text" class="form-control has-feedback-right date-single" placeholder="First Name">
+                  <span class="fa fa-calendar-o form-control-feedback right" aria-hidden="true"></span>
+                </div>
+              </div>
+              <!--End box-inline-->
+              <div class="box-inline">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" class="flat"> Hiện tổng cộng
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" class="flat"> Lọc nhanh
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" class="flat"> Xem chi tiết
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="box-inline">
+                <span class="text-label">Đối tượng</span>
+                <div class="inline-block">
+                  <select class="form-control">
+                    <option>Nguyễn Văn Nghiệp</option>
+                    <option>Bùi Tiến Đại</option>
+                    <option>Nguyễn Văn Mạnh</option>
+                    <option>Trần Thị Vân</option>
+                    <option>Mai Thu Trang</option>
+                  </select>
+                </div>
+              </div>
+              <!--End box-inline-->
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--End head-filter-->
+      <div class="body-table">
+            <table class="table table-bordered">
+              <thead>
+                <tr class="text-center">
+                  <th>TT</th>
+                  <th>Ngày chứng từ</th>
+                  <th>Số chứng từ</th>
+                  <th>Diễn giải</th>
+                  <th>Ông/bà</th>
+                  <th>Tiền</th>
+                  <th>Tiền VAT</th>
+                  <th>Ngày lập</th>
+                  <th>Ngày sửa</th>
+                  <th>Người sửa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-yellow">
+                  <td class="text-center">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" class="flat">
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                    </select>
+                  </td>
+                </tr>
+                <tr class="bg-blue">
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="text-right">10.235.000</td>
+                  <td class="text-right">1.235.000</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="text-center">1</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td>04PT29</td>
+                  <td>Phiếu thu tiền bổ sung thêm</td>
+                  <td>Bùi Tiến Đại</td>
+                  <td class="text-right">760.000</td>
+                  <td class="text-right">76.000</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">admin</td>
+                </tr>
+                <tr>
+                  <td class="text-center">2</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td>04PT29</td>
+                  <td>Phiếu thu tiền bổ sung thêm</td>
+                  <td>Bùi Tiến Đại</td>
+                  <td class="text-right">760.000</td>
+                  <td class="text-right">76.000</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">admin</td>
+                </tr>
+                <tr>
+                  <td class="text-center">3</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td>04PT29</td>
+                  <td>Phiếu thu tiền bổ sung thêm</td>
+                  <td>Bùi Tiến Đại</td>
+                  <td class="text-right">760.000</td>
+                  <td class="text-right">76.000</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">admin</td>
+                </tr>
+                <tr>
+                  <td class="text-center">4</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td>04PT29</td>
+                  <td>Phiếu thu tiền bổ sung thêm</td>
+                  <td>Bùi Tiến Đại</td>
+                  <td class="text-right">760.000</td>
+                  <td class="text-right">76.000</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">admin</td>
+                </tr>
+                <tr>
+                  <td class="text-center">5</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td>04PT29</td>
+                  <td>Phiếu thu tiền bổ sung thêm</td>
+                  <td>Bùi Tiến Đại</td>
+                  <td class="text-right">760.000</td>
+                  <td class="text-right">76.000</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">admin</td>
+                </tr>
+                <tr>
+                  <td class="text-center">6</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td>04PT29</td>
+                  <td>Phiếu thu tiền bổ sung thêm</td>
+                  <td>Bùi Tiến Đại</td>
+                  <td class="text-right">760.000</td>
+                  <td class="text-right">76.000</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">admin</td>
+                </tr>
+                <tr>
+                  <td class="text-center">7</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td>04PT29</td>
+                  <td>Phiếu thu tiền bổ sung thêm</td>
+                  <td>Bùi Tiến Đại</td>
+                  <td class="text-right">760.000</td>
+                  <td class="text-right">76.000</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">admin</td>
+                </tr>
+                <tr>
+                  <td class="text-center">8</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td>04PT29</td>
+                  <td>Phiếu thu tiền bổ sung thêm</td>
+                  <td>Bùi Tiến Đại</td>
+                  <td class="text-right">760.000</td>
+                  <td class="text-right">76.000</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">admin</td>
+                </tr>
+                <tr>
+                  <td class="text-center">9</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td>04PT29</td>
+                  <td>Phiếu thu tiền bổ sung thêm</td>
+                  <td>Bùi Tiến Đại</td>
+                  <td class="text-right">760.000</td>
+                  <td class="text-right">76.000</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">admin</td>
+                </tr>
+                <tr>
+                  <td class="text-center">10</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td>04PT29</td>
+                  <td>Phiếu thu tiền bổ sung thêm</td>
+                  <td>Bùi Tiến Đại</td>
+                  <td class="text-right">760.000</td>
+                  <td class="text-right">76.000</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">02/06/2017</td>
+                  <td class="text-center">admin</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+      <!--End body-table-->
+      <div class="pagination-bottom bg-blue-dark space-10">
+        <ul>
+          <li><a href="#" title="trang 1">Trang 1</a></li>
+          <li><a href="#" title="prev"><i class="fa fa-angle-double-left"></i></a></li>
+          <li><a href="#" title="25">25</a></li>
+          <li><a href="#" title="next"><i class="fa fa-angle-double-right"></i></a></li>
+          <li><a href="#" title="trang 35">Trang 35</a></li>
+        </ul>
+      </div>
+      <!--End pagination-->
+      <div class="table-bottom">
+        <table class="table table-bordered space-10">
+          <thead>
+          <tr class="text-center">
+            <th>Tài khoản nợ</th>
+            <th>Tài khoản có</th>
+            <th>Tiền</th>
+            <th>%VAT</th>
+            <th>Mã khách hàng</th>
+            <th>Tên khách hàng</th>
+            <th>Mã SP</th>
+            <th>Mã KM</th>
+            <th>Mã vụ việc</th>
+            <th>Diễn giải chi tiết</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr class="text-center">
+              <td>11111</td>
+              <td>1388</td>
+              <td class="text-right">250.000</td>
+              <td>10%</td>
+              <td>NVN_KS320</td>
+              <td>Nguyễn Văn Nghiệp</td>
+              <td>SP031_KS23</td>
+              <td>04/05/2018</td>
+              <td>04/05/2018</td>
+              <td>PTTT</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--End table-bottom-->
+      <div class="bg-blue-dark">
+        <div class="action-box">
+          <a href="#" title="Sửa"><span class="icon"><img src="images/icon-print.png" alt="copy"></span> In</a>
+          <a href="#" title="Xóa"><span class="icon"><img src="images/icon-print-customer.png" alt="copy"></span> In tùy chọn</a>
+        </div>
+      </div>
+      <!--End print-->
+    </div>
+    <footer>
+      <div class="left">
+        <h3>Newway Accounting - TCV.JSC </h3>
+        <p><span>Email: </span><a href="mailto: Datbt@tcv.vn" >Datbt@tcv.vn </a></p>
+        <p><span>ĐT: </span><a href="tell:0986866283" title="phone">0986 866 283</a> <span> | </span> <a href="tell:0392320029" title="phone">0392 320 029</a></p>
+        <p><span>Website: </span><a href="tcv.vn" title="website">tcv.vn</a></p>
+        <p><span>Địa chỉ: </span>Tầng 5 Số 25, Tân Mai, Hoàng Mai, Hà Nội.</p>
+      </div>
+      <div class="right">
+        <p>Bản quyền thuộc TCV JSC - (C) 2018</p>
+        <p>Kết nối với chúng tôi trên mạng xã hội</p>
+        <ul class="social">
+          <li><a href="#" title="skype"><img src="images/icon-skype.png" alt="skype"></a></li>
+          <li><a href="#" title="google"><img src="images/icon-g+.png" alt="google"></a></li>
+          <li><a href="#" title="twitter"><img src="images/icon-tw.png" alt="twitter"></a></li>
+          <li><a href="#" title="instagram"><img src="images/icon-in.png" alt="instagram"></a></li>
+          <li><a href="#" title="facebook"><img src="images/icon-fb.png" alt="facebook"></a></li>
+          <li><a href="#" title="youtube"><img src="images/icon-yt.png" alt="youtube"></a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="vendors/Flot/jquery.flot.js"></script>
+    <script src="vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="vendors/Flot/jquery.flot.time.js"></script>
+    <script src="vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="vendors/moment/min/moment.min.js"></script>
+    <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="build/js/custom.js"></script>
+	
+  </body>
+</html>
