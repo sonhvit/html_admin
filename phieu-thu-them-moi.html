@@ -79,66 +79,207 @@
         </div>
       </div>
       <!--End menu-top-->
-      <div class="head-filter">
+      <div class="head-filter bg-blue-light">
         <form action="#">
           <div class="row ">
-            <div class="col-xs-12 space-10">
-              <div class="box-inline">
-                <span class="text-label">Từ ngày</span>
-                <div class="inline-block">
-                  <input type="text" class="form-control has-feedback-right date-single" placeholder="First Name">
-                  <span class="fa fa-calendar-o form-control-feedback right" aria-hidden="true"></span>
+            <div class="col-md-7">
+              <div class="row space-5">
+                <div class="col-md-4">
+                  <div class="box-inline margin-0 full-width">
+                    <span class="text-label w_100">Loại chứng từ</span>
+                    <div class="inline-block">
+                      <select name="" class="form-control">
+                        <option value="PTT">PTT</option>
+                        <option value="PTT">PTT 1</option>
+                        <option value="PTT">PTT 2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!--End box-inline-->
+                </div>
+                <div class="col-md-8">
+                  <div class="box-inline margin-0 full-width">
+                      <input type="text" class="form-control" placeholder="Phiếu thu tiền" disabled>
+                  </div>
                 </div>
               </div>
-              <!--End box-inline-->
-              <div class="box-inline">
-                <span class="text-label">Đến ngày</span>
-                <div class="inline-block">
-                  <input type="text" class="form-control has-feedback-right date-single" placeholder="First Name">
-                  <span class="fa fa-calendar-o form-control-feedback right" aria-hidden="true"></span>
+              <!--End row-->
+              <div class="row space-5">
+                <div class="col-md-4">
+                  <div class="box-inline margin-0 full-width">
+                    <span class="text-label w_100">Số chứng từ</span>
+                    <div class="inline-block">
+                      <select name="" class="form-control">
+                        <option value="04PT31">04PT31</option>
+                        <option value="04PT32">04PT32</option>
+                        <option value="04PT33">04PT33</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!--End box-inline-->
+                </div>
+                <div class="col-md-3">
+                  <div class="box-inline margin-0 full-width">
+                    <span class="text-label w_50">Ngày</span>
+                    <div class="inline-block">
+                      <input type="text" class="form-control has-feedback-right date-single" placeholder="First Name">
+                      <span class="fa fa-calendar-o form-control-feedback right" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                  <!--End box-inline-->
+                </div>
+                <div class="col-md-5">
+                  <div class="box-inline margin-0 full-width">
+                    <span class="text-label w_80">Loại tiền</span>
+                    <div class="inline-block">
+                      <select name="" class="form-control">
+                        <option value="PTT">PTT</option>
+                        <option value="PTT">PTT 1</option>
+                        <option value="PTT">PTT 2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!--End box-inline-->
                 </div>
               </div>
-              <!--End box-inline-->
-              <div class="box-inline">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" class="flat"> Hiện tổng cộng
-                  </label>
+              <!--End row-->
+              <div class="row space-5">
+                <div class="col-md-4">
+                  <div class="box-inline margin-0 full-width">
+                    <span class="text-label w_100">Đối tượng</span>
+                    <div class="inline-block">
+                      <select name="" class="form-control">
+                        <option value="PTT">Nguyễn Văn Nghiệp</option>
+                        <option value="PTT">PTT 1</option>
+                        <option value="PTT">PTT 2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!--End box-inline-->
                 </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" class="flat"> Lọc nhanh
-                  </label>
+                <div class="col-md-3">
+                  <div class="box-inline margin-0 full-width">
+                    <input type="text" class="form-control" >
+                  </div>
+                  <!--End box-inline-->
                 </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" class="flat"> Xem chi tiết
-                  </label>
+                <div class="col-md-5">
+                  <div class="box-inline margin-0 full-width">
+                    <span class="text-label w_80">Công nợ</span>
+                    <div class="inline-block">
+                      <input type="text" class="form-control" >
+                    </div>
+                  </div>
+                  <!--End box-inline-->
                 </div>
               </div>
+              <!--End row-->
+              <div class="row space-5">
+                <div class="col-md-7">
+                  <div class="box-inline margin-0 full-width">
+                    <span class="text-label w_100">Địa chỉ</span>
+                    <div class="inline-block">
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <!--End box-inline-->
+                </div>
+                <div class="col-md-5">
+                  <div class="box-inline margin-0 full-width">
+                    <span class="text-label w_80">Mã số thuế</span>
+                    <div class="inline-block">
+                      <input type="text" class="form-control" >
+                    </div>
+                  </div>
+                  <!--End box-inline-->
+                </div>
+              </div>
+              <!--End row-->
             </div>
-            <div class="col-xs-12">
-              <div class="box-inline">
-                <span class="text-label">Đối tượng</span>
-                <div class="inline-block">
-                  <select class="form-control">
-                    <option>Nguyễn Văn Nghiệp</option>
-                    <option>Bùi Tiến Đại</option>
-                    <option>Nguyễn Văn Mạnh</option>
-                    <option>Trần Thị Vân</option>
-                    <option>Mai Thu Trang</option>
-                  </select>
-                </div>
-              </div>
-              <!--End box-inline-->
+            <!--End col-md-6-->
+            <div class="col-md-5">
+              <span class="text-label space-10">Diễn giải</span>
+              <textarea class="form-control" placeholder="Nội dung diễn giải" rows="6"></textarea>
             </div>
+            <!--End col-md-6-->
           </div>
         </form>
       </div>
       <!--End head-filter-->
+      <div class="menu-top bg-blue-dark space-10">
+        <ul class="menu-nav">
+          <li><a href="#" title="Menu">Phát sinh chi tiết</a></li>
+          <li><a href="#" title="Phiếu thu tiền" class="active">Phát sinh VAT</a></li>
+        </ul>
+      </div>
+      <!--End bg-blue-dark-->
       <div class="body-table">
-            <table class="table table-bordered">
-            </table>
+        <table class="table table-bordered">
+          <thead>
+            <tr class="text-center">
+              <th>Tiền</th>
+              <th>Tài khoản nợ</th>
+              <th>Tài khoản có</th>
+              <th>Đối tượng</th>
+              <th>Tên đối tượng</th>
+              <th>Đối tượng có </th>
+              <th>Sản phẩm</th>
+              <th>Sản phẩm [có]</th>
+              <th>Khoản mục</th>
+              <th>Tên khoản mục</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-right">1.560.000</td>
+              <td>111111</td>
+              <td>1311</td>
+              <td>Deloy01_NVN</td>
+              <td>Nguyễn Văn Nghiệp</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>11111</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>11111</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>11111</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <!--End body-table-->
       <div class="pagination-bottom bg-blue-dark space-10">
