@@ -42,6 +42,11 @@ header{
     &.home{
       position: absolute;left: 7px;bottom: -4px;
       img{width: 30px;height: 30px;}
+      &+li{
+        span{
+          padding-left: 10px;
+        }
+      }
     }
     a{
       text-align: center;display: inline-block;
